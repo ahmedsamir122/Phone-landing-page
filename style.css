@@ -1,0 +1,149 @@
+.main {
+    background: linear-gradient(to right, #9c27b0, #8ec);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    padding: 2em 8em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 2;
+    align-items: center;
+}
+.logo {
+    width: 7em;
+}
+.logo img {
+    width: 100%;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+
+}
+.links li{
+    margin-left: 2em;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.features {
+    position: absolute;
+    right: 8em;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.features p{
+    color: white;
+    font-size: 1.5em;
+}
+.features img{
+    width: 1.5em;
+    cursor: pointer;
+}
+.features img:nth-of-type(2){
+    transform: rotate(180deg);
+}
+.cir-container {
+    position: absolute;
+
+    width: 800px;
+    height: 800px;
+
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.cir{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    left: 0%;
+    top: 0%;
+    transition: 0.5s;
+}
+.cir-container::after{
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 400px solid white;
+    border-bottom: 400px solid white;
+    border-left: 400px solid white;
+    border-right: 400px solid transparent;
+    z-index: 2;
+}
+.phone {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    width: 10em;
+    z-index: 3;
+}
+.phone img{
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+.info-img {
+    width: 4em;
+}
+.info-img img{
+    width: 100%;
+}
+.info-data {
+    padding-left: 1em;
+}
+.info-data h2{
+    color: white;
+}
+.info-data p{
+    margin-top: -0.8em;
+    color: white;
+}
+.info.one{
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: rotate(0deg);
+}
+.info.two{
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    transform: translateX(50%);
+    transform: rotate(-90deg);
+}
+.info.three{
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: rotate(-180deg);
+}
+
+.info.four{
+    position: absolute;
+    bottom: 15%;
+    right: 35%;
+    transform: translateX(50%);
+    transform: rotate(90deg);
+}
